@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  
+  --font-playwrite: 'Playwrite Australia NSW', cursive;
+  --font-halimun: 'halimun';
+}
+@layer components {
+  .myContainer {
+    @apply max-w-7xl mx-auto sm:px-6 px-4;
+  }
+}
+
+
+.masonry-column {
+  background-clip: padding-box;
+}
+

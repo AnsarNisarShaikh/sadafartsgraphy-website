@@ -1,0 +1,34 @@
+{
+  "name": "sadafartsgraphy",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"    
+  },
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^16.1.3",
+    "@contentful/rich-text-types": "^17.2.2",
+    "@react-email/render": "^1.2.3",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.543.0",
+    "next": "15.5.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-icons": "^5.5.0",
+    "react-masonry-css": "^1.0.16",
+    "resend": "^6.1.0",
+    "swiper": "^11.2.10"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "24.4.0",
+    "@types/react": "19.1.13",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.2",
+    "tailwindcss": "^4"
+  }
+}
