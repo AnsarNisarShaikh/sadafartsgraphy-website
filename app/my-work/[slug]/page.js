@@ -8,29 +8,51 @@ import Link from 'next/link';
 import { fetchServicesDetail } from '@/apis/getServiceData';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS, MARKS } from "@contentful/rich-text-types";
+import { metaServices } from "@/utils/metaServiceData"
+// meta data start
 
-// export async function generateStaticParams() {
-//   return services.map((service) => ({
-//     slug: service.slug,
-//   }))
-// }
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params
+  const service = metaServices[slug];
+
+  if (!service) {
+    return {
+      title: "Service Not Found",
+      description: "This service is not available.",
+    };
+  }
+
+  return {
+    title: service.title,
+    description: service.description,
+    openGraph: {
+      title: service.title,
+      description: service.description,
+      url: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/my-work/${slug}`,
+      siteName: "sadafartsgraphy",
+      locale: "en_US",
+      type: "website",
+    },
+  };
+}
 
 async function Page({ params }) {
   // const { slug } = use(params);
- const {slug} = await params
-//  const resolvedParams = await params
+  const { slug } = await params
+  //  const resolvedParams = await params
   // const slug = resolvedParams.slug
   // console.log(slug, "slug")
   const { serviceDetails } = await fetchServicesDetail(slug);
-// console.log(serviceDetails,"service data")
-const service=serviceDetails[0];
+  // console.log(serviceDetails,"service data")
+  const service = serviceDetails[0];
 
-const galleryArray = serviceDetails[0]?.galleryCollection.items;
+  const galleryArray = serviceDetails[0]?.galleryCollection.items;
   // let service=serviceData.filter((item)=>item.slug===slug);
   // service=service[0];
   // console.log(service,"service")
 
-   const options = {
+  const options = {
     renderMark: {
       [MARKS.BOLD]: (text) => <strong>{text}</strong>,
     },
@@ -59,7 +81,7 @@ const galleryArray = serviceDetails[0]?.galleryCollection.items;
             {service?.title}
           </h1>
         </div>
-       
+
         <div className="absolute top-20 left-20 w-32 h-32 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl animate-pulse"></div>
         <div className="absolute bottom-20 right-20 w-40 h-40 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-xl animate-pulse delay-1000"></div>
       </section>
@@ -68,7 +90,7 @@ const galleryArray = serviceDetails[0]?.galleryCollection.items;
           <div className='sm:col-span-9'>
 
             <div className='mb-5 space-y-3'>
-             {documentToReactComponents(service.desc.json, options)}
+              {documentToReactComponents(service.desc.json, options)}
               {/* <p className="text-lg text-gray-300 ">
                 {service?.descOne}
               </p>
@@ -78,7 +100,7 @@ const galleryArray = serviceDetails[0]?.galleryCollection.items;
             </div>
 
             {/* <Gallery workImages={service?.images}/> */}
-            <Gallery workImages={galleryArray}/>
+            <Gallery workImages={galleryArray} />
 
           </div>
 
@@ -88,7 +110,7 @@ const galleryArray = serviceDetails[0]?.galleryCollection.items;
               <ul className='self-start flex flex-wrap  item-start text-white text-sm  space-x-2 space-y-2'>
                 {MyWorkPages.map((item, i) =>
                   <Link key={i} href={item.linkSrc} className='w-full'>
-                  <li className={`${item.slug === service?.slug ? "bg-white text-gray-900" : "bg-gray-800"} w-full text-center p-2 rounded-md text-wrap wrap-break-word hover:bg-white hover:text-gray-900`} >{item.title}</li>
+                    <li className={`${item.slug === service?.slug ? "bg-white text-gray-900" : "bg-gray-800"} w-full text-center p-2 rounded-md text-wrap wrap-break-word hover:bg-white hover:text-gray-900`} >{item.title}</li>
                   </Link>
                 )}
 
@@ -102,7 +124,7 @@ const galleryArray = serviceDetails[0]?.galleryCollection.items;
                   'Live Event Art & Activations',
                   'Studio Commissions',
                   'Luxury Brand Collaborations',
-                  'Private Custom Orders',                 
+                  'Private Custom Orders',
                 ].map((service, index) => (
                   <div key={index} className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>

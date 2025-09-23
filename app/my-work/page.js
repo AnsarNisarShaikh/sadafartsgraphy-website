@@ -2,6 +2,20 @@ import { fetchWorksDetail } from '@/apis/getWorkData';
 import { Services } from '@/components/home/Services'
 import React from 'react'
 
+export const metadata = {
+  title: "My work | Calligraphy & Custom Art in Riyadh",
+  description:
+    "Explore my work of Arabic calligraphy, murals, product painting, embroidery & bespoke designs. Unique creations for events, decor & gifting.",
+   openGraph: {
+      title: "My work | Calligraphy & Custom Art in Riyadh",
+      description: "Explore my work of Arabic calligraphy, murals, product painting, embroidery & bespoke designs. Unique creations for events, decor & gifting.",
+      url: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/my-work`,
+      siteName: "sadafartsgraphy",
+      locale: "en_US",
+      type: "website",
+    },
+};
+
 async function page() {
    const { workDetails } = await fetchWorksDetail();
     // console.log(workDetails,"work Details")

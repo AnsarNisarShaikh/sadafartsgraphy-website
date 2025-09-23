@@ -88,18 +88,3 @@ const MyWorkPages = [
 
 export default MyWorkPages;
 
-// Live/studio calligraphy
-// Bespoke calligraphy
-// Live/studio Engraving
-// Jewellery illustration
-// Heat foiling
-// Product painting/customisation
-// Leather painting/customisation
-// Mural painting
-// Watercolour painting
-// Tote bag live /studio customisation
-// Artwork customisation
-// Beads making 
-// Hand Embroidery work
-// Silhouette arts
-// Origami work

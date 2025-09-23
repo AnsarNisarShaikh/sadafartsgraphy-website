@@ -1,40 +1,15 @@
-// 'use client';
-// import { useState, useEffect } from 'react';
 import Link from 'next/link';
-
-// import { Services } from '@/components/home/Services';
 import Image from 'next/image';
 import Brands from '@/components/home/Brands';
-// import { fetchWorksDetail } from '@/apis/getWorkData';
 import HomeBanner from '@/components/home/HomeBanner';
 import HomeServices from '@/components/home/HomeServices';
 import WhyClients from '@/components/home/WhyClients';
 import PassionData from '@/components/home/PassionData';
 import { fetchWorksDetail } from '@/apis/getWorkData';
 
-export default async function Home() {
-  // const [isVisible, setIsVisible] = useState(false);
-  // const [servicesVisible, setServicesVisible] = useState(false);
-  // const [aboutVisible, setAboutVisible] = useState(false);
+export default async function Home() {  
 
   const { workDetails } = await fetchWorksDetail();
-    // console.log(workDetails,"work Details")
-
-  // useEffect(() => {
-  //   setIsVisible(true);
-  //   const timer = setTimeout(() => setServicesVisible(true), 500);
-  //   const timer2 = setTimeout(() => setAboutVisible(true), 1000);
-  //   return () => {
-  //     clearTimeout(timer);
-  //     clearTimeout(timer2);
-  //   };
-  // }, []);
-
-
-
-
-
-
 
   return (
     <div className="min-h-screen bg-gray-950 text-white overflow-hidden">
@@ -60,7 +35,7 @@ export default async function Home() {
           src="/images/banner.jpg"
           alt="Background banner"
           fill
-          priority   // 🚀 ensures it loads immediately
+          priority   
           // quality={90}
           className="object-cover opacity-30"
         />
