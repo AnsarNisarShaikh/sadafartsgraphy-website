@@ -34,7 +34,7 @@ function PassionData() {
                   </div>
                 ))}
               </div>
-              <Link href="/about" className="inline-flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors">
+              <Link href="/" className="inline-flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors">
                 <span>Learn More About My Journey</span>
                 <i className="ri-arrow-right-line"></i>
               </Link>

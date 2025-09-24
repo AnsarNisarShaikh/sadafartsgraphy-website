@@ -9,14 +9,24 @@ import { fetchServicesDetail } from '@/apis/getServiceData';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 import { metaServices } from "@/utils/metaServiceData"
+import { notFound } from "next/navigation";
+import {services} from "@/utils/serviceData"
 // meta data start
 
+export const revalidate=60;
+export  function generateStaticParams() {
+ 
+
+  const slugs = services.map((item) => ({ slug: `${item.slug}` }));
+  console.log('slugs', slugs);
+  return slugs;
+}
 
 export async function generateMetadata({ params }) {
   const { slug } = await params
-  const service = metaServices[slug];
+  const Metaservice = metaServices[slug];
 
-  if (!service) {
+  if (!Metaservice) {
     return {
       title: "Service Not Found",
       description: "This service is not available.",
@@ -24,11 +34,11 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: service.title,
-    description: service.description,
+    title: Metaservice.title,
+    description: Metaservice.description,
     openGraph: {
-      title: service.title,
-      description: service.description,
+      title: Metaservice.title,
+      description: Metaservice.description,
       url: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/my-work/${slug}`,
       siteName: "sadafartsgraphy",
       locale: "en_US",
@@ -63,6 +73,8 @@ async function Page({ params }) {
     },
     renderText: (text) => text.replace("!", "?"),
   };
+
+   if (!service) return notFound();
 
   return (
     <div className=' bg-gray-950 min-h-[400px] text-white overflow-hidden'>

@@ -6,6 +6,7 @@ import HomeServices from '@/components/home/HomeServices';
 import WhyClients from '@/components/home/WhyClients';
 import PassionData from '@/components/home/PassionData';
 import { fetchWorksDetail } from '@/apis/getWorkData';
+import HomeAbout from '@/components/home/HomeAbout';
 
 export default async function Home() {  
 
@@ -47,6 +48,17 @@ export default async function Home() {
         {/* Floating Elements */}
         <div className="absolute top-20 left-20 w-32 h-32 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl animate-pulse"></div>
         <div className="absolute bottom-20 right-20 w-40 h-40 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-xl animate-pulse delay-1000"></div>
+      </section>
+
+      {/* About section */}
+
+         <section className="bg-gray-950">
+           <div className="myContainer relative">
+            <div className='absolute inset-0 top-0 left-0 right-0 w-full mx-auto z-0 '>
+              <img src="/images/about-banner-home2.png" alt='About'/>
+            </div>
+          <HomeAbout />
+          </div>
       </section>
 
       {/* Services Section */}

@@ -24,7 +24,7 @@ function HomeBanner() {
                 the beauty and complexity of the world around us through various art forms.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Link href="/portfolio" className="bg-gray-800 hover:text-gray-800 hover:bg-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25">
+                <Link href="/my-work" className="bg-gray-800 hover:text-gray-800 hover:bg-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25">
                     View My Work
                 </Link>
                 <Link href="/contact" className="shadow-lg border border-gray-100 hover:border-gray-100 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-gray-800">
