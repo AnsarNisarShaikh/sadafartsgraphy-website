@@ -15,7 +15,7 @@ export function Header() {
     },
     {
       name: "About",
-      link: "/",
+      link: "/about",
       icon: <User className="h-6 w-6 text-neutral-500 dark:text-white" />,
     },
     {

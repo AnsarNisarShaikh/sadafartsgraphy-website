@@ -12,13 +12,14 @@ import { metaServices } from "@/utils/metaServiceData"
 import { notFound } from "next/navigation";
 import {services} from "@/utils/serviceData"
 // meta data start
-
+// ISR (Incremented Static regeneration)
+// it will reload after 60 sec and get data from server..if contentful data changed
 export const revalidate=60;
-export  function generateStaticParams() {
- 
 
+// SSG (static site Generation)
+export  function generateStaticParams() {
   const slugs = services.map((item) => ({ slug: `${item.slug}` }));
-  console.log('slugs', slugs);
+  
   return slugs;
 }
 

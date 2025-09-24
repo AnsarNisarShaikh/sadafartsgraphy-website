@@ -7,10 +7,12 @@ import WhyClients from '@/components/home/WhyClients';
 import PassionData from '@/components/home/PassionData';
 import { fetchWorksDetail } from '@/apis/getWorkData';
 import HomeAbout from '@/components/home/HomeAbout';
+import { fetchBrandsDetail } from '@/apis/getBrandsData';
 
 export default async function Home() {  
 
   const { workDetails } = await fetchWorksDetail();
+  const { brandsDetails } = await fetchBrandsDetail();
 
   return (
     <div className="min-h-screen bg-gray-950 text-white overflow-hidden">
@@ -80,7 +82,7 @@ export default async function Home() {
 
       {/* brands */}
       <section className="py-10 sm:py-20 bg-gray-950">
-        <Brands />
+   {   brandsDetails !==undefined &&  <Brands brandsDetails={brandsDetails} />}
       </section>
 
       {/* Call to Action */}
