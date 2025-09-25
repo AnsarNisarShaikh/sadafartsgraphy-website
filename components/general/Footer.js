@@ -286,7 +286,7 @@ function Footer() {
         </div>
       </div>
       <div className="fixed right-0 bottom-3 sm:bottom-6 z-50">
-        <Link href="https://api.whatsapp.com/send?phone=+966502269892" target="_blank">
+        <Link href="https://api.whatsapp.com/send?phone=966502269892" target="_blank">
          
           <div className="flex flex-col gap-y-2 items-center justify-center">
             <FaWhatsapp className="w-8 h-8 sm:w-16 sm:h-16 text-green-500" />
