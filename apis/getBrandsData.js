@@ -25,6 +25,7 @@ async function fetchBrandsDetail() {
         }
         `,
         }),
+        next: { revalidate: 60 },
     });
 
     if (!response.ok) {

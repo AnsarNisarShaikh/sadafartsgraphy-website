@@ -26,6 +26,7 @@ async function fetchWorksDetail() {
         }
         `,
         }),
+        next: { revalidate: 60 },
     });
 
     if (!response.ok) {
