@@ -40,22 +40,22 @@ function page() {
             <section className='myContainer mt-5 mb-10 max-w-4xl'>
                 <div className='text-base sm:text-lg  space-y-3 text-gray-300'>
                     <p>
-                        Passionate about transforming everyday objects into timeless works of art. Specializing in <strong >live</strong>  and  <strong >studio calligraphy</strong>, <strong >engraving</strong>, and <strong >bespoke artwork customisation</strong>, I combine traditional craftsmanship with modern elegance across various mediums.
+                   I am an Architect and a passionate artist specializing in <strong>arabic and english calligraphy painting</strong>, <strong>abstract painting</strong>, <strong>digital art</strong>, <strong>mural painting</strong>, <strong>jewellery illustration</strong>, <strong>product painting</strong>, <strong>beads making</strong>, <strong>engraving</strong>, <strong>heat foiling</strong> . With a deep love for creativity and expression, I have dedicated my life to capturing the beauty and complexity of the world around us. 
+                    </p>
+                     My journey as an artist began <strong>4 years ago</strong> when I discovered the power of art to convey emotions and tell stories. Over the years, I have honed my skills and developed a unique style that blends <strong>abstract painting with Arabic calligraphy</strong>, <strong>
+                     pouring painting with verses of Quran</strong>. My work is heavily inspired by the beauty of <strong>Arabic calligraphy</strong>, and I strive to evoke a sense of wonder and introspection in my audience.
+                    <p>
+                        I have had the privilege of showcasing my work in various <strong>Art Exhibitions platforms</strong>. Each piece I create is a reflection of my inner world and a dialogue with the viewer, inviting them to explore their own perceptions and emotions. I believe that art has the power to transform and uplift communities, and I am always eager to contribute to projects that have a positive impact. 
                     </p>
                     <p>
-                        From <strong >jewellery illustration</strong>  and <strong >heat foiling </strong> to <strong >leather </strong> and <strong >product painting</strong>, my work spans across intimate keepsakes to large-scale <strong >mural paintings</strong>. Whether it&apos;s a <strong >hand-painted tote</strong>, <strong >watercolour art</strong>, or <strong >personalised embroidery</strong>, I infuse each piece with meaning, detail, and beauty.
+                        I am a passionate <strong>Graphic Designer</strong>  and <strong>Digital Artist</strong> too with a love for creating captivating visual experiences. With a strong foundation in design principles and a flair for digital innovation, I specialize in crafting dynamic visuals that resonate with audiences. Whether it&apos;s through <strong>sleek logo designs</strong>, <strong>immersive digital illustrations</strong>, or <strong>engaging web layouts</strong>, I thrive on turning ideas into stunning visual realities. With each project, I bring a unique blend of creativity, technical expertise, and attention to detail, ensuring that every design reflects the essence and vision of my clients. 
                     </p>
                     <p>
-                        I also explore the art of <strong >silhouettes</strong>, <strong >origami</strong>, <strong >beadwork</strong>, and more—offering a truly personalised, handcrafted touch to every creation.
+                      From concept development to final execution, I&apos;m dedicated to delivering impactful designs that leave a lasting impression. Let&apos;s collaborate and bring your creative vision to life! for taking the time to learn about my work.
                     </p>
+                    <p className='italic font-semibold'>I invite you to explore my portfolio and join me on this. artistic journey.</p>
                 </div>
-                <ul className='my-2 text-base sm:text-lg  space-y-2 text-gray-300'>
-                    <span className='font-semibold mb-4'>Available for:</span>
-                    <li className='flex items-center space-x-3'> <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></span> <span>Live Event Art & Activations</span></li>
-                    <li className='flex items-center space-x-3'> <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></span> <span>Studio Commissions</span></li>
-                    <li className='flex items-center space-x-3'> <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></span> <span>Luxury Brand Collaborations</span></li>
-                    <li className='flex items-center space-x-3'> <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></span> <span>Private Custom Orders</span></li>
-                </ul>
+             
             </section>
             <section className='bg-gray-900/50 py-4 sm:py-8 '>
                 <div className="myContainer my-6 sm:my-12 max-w-4xl grid lg:grid-cols-2 gap-5 items-center">

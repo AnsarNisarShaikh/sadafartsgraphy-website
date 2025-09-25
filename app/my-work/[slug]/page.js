@@ -14,6 +14,8 @@ import {services} from "@/utils/serviceData"
 // meta data start
 // ISR (Incremented Static regeneration)
 // it will reload after 60 sec and get data from server..if contentful data changed
+//It does NOT call Contentful every 60 seconds automatically.
+//It only calls Contentful when a user requests the page after the stale time.
 export const revalidate = 60;
 
 // SSG (static site Generation)
