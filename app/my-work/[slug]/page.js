@@ -14,7 +14,7 @@ import {services} from "@/utils/serviceData"
 // meta data start
 // ISR (Incremented Static regeneration)
 // it will reload after 60 sec and get data from server..if contentful data changed
-export const revalidate=60;
+export const revalidate = 60;
 
 // SSG (static site Generation)
 export  function generateStaticParams() {

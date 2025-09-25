@@ -36,6 +36,7 @@ async function fetchServicesDetail(slug) {
         }
         `,
         }),
+        next: { revalidate: 60 },
     });
 
     if (!response.ok) {
