@@ -26,7 +26,7 @@ function HomeServices({workDetails}) {
                 </p>
             </div>
             <Services useAt="home" workDetails={workDetails} />
-            <Link href="/my-work" className="cursor-pointer mt-8 bg-gray-800 flex items-center justify-center w-40 mx-auto hover:text-gray-800 hover:bg-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25">    <button className=''>View All</button> </Link>
+            <Link href="/my-work" className="cursor-pointer mt-8 bg-gray-800 flex items-center justify-center w-40 mx-auto hover:text-gray-800 hover:bg-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25">    <button className='cursor-pointer'>View All</button> </Link>
 
 
         </div>
