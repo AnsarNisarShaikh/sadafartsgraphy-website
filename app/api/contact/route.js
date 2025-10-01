@@ -12,9 +12,9 @@ export async function POST(req) {
     // console.log(body,"body")
 
     const data = await resend.emails.send({
-  from: 'Contact Form <onboarding@resend.dev>', // ✅ works without domain verification
-      to: 'sadafartsgraphy@gmail.com',                   // ✅ your own Gmail/Outlook etc.
-      subject: 'New enquiry Form Website',
+      from: 'Contact Form <onboarding@resend.dev>', 
+      to: process.env.NEXT_PUBLIC_EMAIL_TO,                
+      subject: 'New enquiry From Website Contact Form',
       react: EmailTemplate({ name, email, phone, message}),
     });
 
