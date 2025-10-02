@@ -18,7 +18,7 @@ export const metadata = {
 function page() {
     return (
         <div className="overflow-x-hidden sm:min-h-screen bg-gray-950 text-white">
-            <section className='myContainer mt-12 sm:mt-20 max-w-4xl'>
+            <section className='myContainer mt-12 sm:mt-20 max-w-5xl'>
                 <h2 className="text-3xl text-center pt-10 sm:text-5xl font-bold mb-6 text-white">
                     About me
                 </h2>
@@ -58,8 +58,8 @@ function page() {
              
             </section>
             <section className='bg-gray-900/50 py-4 sm:py-8 '>
-                <div className="myContainer my-6 sm:my-12 max-w-4xl grid lg:grid-cols-2 gap-5 items-center">
-                    <div className={`space-y-6 `}>
+                <div className="myContainer my-6 sm:my-12 max-w-4xl grid grid-cols-1 sm:grid-cols-2 gap-5 items-center">
+                    <div className={`space-y-6  `}>
                         <h2 className="text-3xl sm:text-5xl text-white font-bold">
                             My Artistic Journey
                         </h2>
@@ -77,11 +77,11 @@ function page() {
                     <div className={`relative `}>
                         <div className="relative">
                             <img
-                                src="/images/about-bottom.png"
+                                src="/images/new-about-bottom.png"
                                 alt="about"
 
 
-                                className="w-full h-auto object-cover "
+                                className="w-full h-auto "
                             />
                             {/* rounded-2xl shadow-2xl */}
                             {/* <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur-xl opacity-50"></div> */}
