@@ -56,9 +56,9 @@ export default async function Home() {
 
          <section className="bg-gray-950">
            <div className="myContainer relative">
-            <div className='absolute inset-0 top-0 left-0 right-0 w-full mx-auto z-0 '>
+            {/* <div className='absolute inset-0 top-0 left-0 right-0 w-full mx-auto z-0 '>
               <img src="/images/about-banner-home2.png" alt='About'/>
-            </div>
+            </div> */}
           <HomeAbout />
           </div>
       </section>
