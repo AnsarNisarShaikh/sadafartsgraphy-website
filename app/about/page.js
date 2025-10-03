@@ -2,16 +2,16 @@ import React from 'react'
 import { Check } from 'lucide-react';
 
 export const metadata = {
-  title: "About - Sadaf Khan | Calligraphy & Art Specialist in Riyadh",
-  description:
-    "Discover my journey as a Riyadh-based artist blending tradition & modern creativity. Specializing in calligraphy, murals, painting & bespoke art.",
-   openGraph: {
-      title: "About - Sadaf Khan | Calligraphy & Art Specialist in Riyadh",
-      description: "Discover my journey as a Riyadh-based artist blending tradition & modern creativity. Specializing in calligraphy, murals, painting & bespoke art.",
-      url: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/about`,
-      siteName: "sadafartsgraphy",
-      locale: "en_US",
-      type: "website",
+    title: "About - Sadaf Khan | Calligraphy & Art Specialist in Riyadh",
+    description:
+        "Discover my journey as a Riyadh-based artist blending tradition & modern creativity. Specializing in calligraphy, murals, painting & bespoke art.",
+    openGraph: {
+        title: "About - Sadaf Khan | Calligraphy & Art Specialist in Riyadh",
+        description: "Discover my journey as a Riyadh-based artist blending tradition & modern creativity. Specializing in calligraphy, murals, painting & bespoke art.",
+        url: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/about`,
+        siteName: "sadafartsgraphy",
+        locale: "en_US",
+        type: "website",
     },
 };
 
@@ -40,23 +40,25 @@ function page() {
             <section className='myContainer mt-5 mb-10 max-w-4xl'>
                 <div className='text-base sm:text-lg  space-y-3 text-gray-300'>
                     <p>
-                  based in Riyadh, Saudi Arabia. I specialize in creating <strong>Arabic and English calligraphy live at events</strong>, <strong>exhibitions</strong> and <strong>cultural gatherings</strong>—offering an engaging and memorable experience that brings the beauty of handwritten art to life in real time.
+                        Based in Riyadh, Saudi Arabia. I specialize in creating <strong>Arabic and English calligraphy live at events</strong>, <strong>exhibitions</strong> and <strong>cultural gatherings</strong>—offering an engaging and memorable experience that brings the beauty of handwritten art to life in real time.
                     </p>
-                   It&apos;s been four years since I began my artistic journey—a path filled with growth, challenges, and endless inspiration. My work spans <strong>abstract painting</strong>, <strong>digital art</strong>, <strong>mural painting</strong>, <strong>jewellery illustration</strong>, <strong>beads making</strong>, <strong>engraving</strong>, <strong>heat foiling</strong>, <strong>origami</strong>, and <strong>silhouette art</strong>.
+                    <p>
+                        It&apos;s been four years since I began my artistic journey—a path filled with growth, challenges, and endless inspiration. My work spans <strong>abstract painting</strong>, <strong>digital art</strong>, <strong>mural painting</strong>, <strong>jewellery illustration</strong>, <strong>beads making</strong>, <strong>engraving</strong>, <strong>heat foiling</strong>, <strong>origami</strong>, and <strong>silhouette art</strong>.
+                    </p>
                     <p>
                         One of my signature styles involves <strong>combining Arabic calligraphy with abstract painting</strong>, often featuring <strong>Qur&apos;anic verses through techniques</strong> such as <strong>pouring</strong> and <strong>mixed media</strong>. These pieces are not only visually compelling but also spiritually resonant, inviting viewers into a space of introspection and cultural appreciation.
                     </p>
                     <p>
-                     I&apos;ve had the privilege of showcasing my work at various <strong>art exhibitions</strong> and <strong>creative platforms</strong>, and each piece I create is a reflection of my inner world—a visual dialogue that connects deeply with its audience.
+                        I&apos;ve had the privilege of showcasing my work at various <strong>art exhibitions</strong> and <strong>creative platforms</strong>, and each piece I create is a reflection of my inner world—a visual dialogue that connects deeply with its audience.
                     </p>
                     <p>
-                      In addition to fine art, I&apos;m also a skilled <strong>graphic designer</strong> and <strong>digital artist</strong>, creating powerful visual content including <strong>logo designs</strong>, <strong>illustrations</strong>, and <strong>web layouts</strong>. With a strong foundation in design principles and an eye for innovation, I bring clarity, creativity, and impact to every project I undertake.
+                        In addition to fine art, I&apos;m also a skilled <strong>graphic designer</strong> and <strong>digital artist</strong>, creating powerful visual content including <strong>logo designs</strong>, <strong>illustrations</strong>, and <strong>web layouts</strong>. With a strong foundation in design principles and an eye for innovation, I bring clarity, creativity, and impact to every project I undertake.
                     </p>
                     <p className='font-bold'>Let&apos;s Collaborate</p>
                     <p>Whether it&apos;s through <strong>a live calligraphy session</strong>, <strong>a custom painting</strong>, or <strong>a digital design project</strong>, being <strong>a live calligrapher</strong> and <strong>live event artist</strong> i am always excited to collaborate on meaningful work that inspires and uplifts.</p>
                     <p className='italic font-semibold'>Thank you for visiting—please take a moment to explore my work and feel free to get in touch to bring your creative vision to life.</p>
                 </div>
-             
+
             </section>
             <section className='bg-gray-900/50 py-4 sm:py-8 '>
                 <div className="myContainer my-6 sm:my-12 max-w-4xl grid grid-cols-1 sm:grid-cols-2 gap-5 items-center">
