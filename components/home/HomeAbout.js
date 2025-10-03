@@ -40,10 +40,10 @@ function HomeAbout() {
 
                     <div className='text-base pt-7 sm:pt-2 space-y-2 text-gray-300'>
                         <p>
-                            Passionate about transforming everyday objects into timeless works of art. Specializing in <strong >live</strong>  and  <strong >studio calligraphy</strong>, <strong >engraving</strong>, and <strong >bespoke artwork customisation</strong>, I combine traditional craftsmanship with modern elegance across various mediums.
+                            Passionate about transforming everyday objects into timeless works of art as a <strong>calligrapher in Riyadh</strong> and a <strong>live event artist</strong>. Specializing in <strong >live</strong>  and  <strong >studio calligraphy</strong>, <strong >engraving</strong>, and <strong >bespoke artwork customisation</strong>, I combine traditional craftsmanship with modern elegance across various mediums.
                         </p>
                         <p>
-                            From <strong >jewellery illustration</strong>  and <strong >heat foiling </strong> to <strong >leather </strong> and <strong >product painting</strong>, my work spans across intimate keepsakes to large-scale <strong >mural paintings</strong>. Whether it&apos;s a <strong >hand-painted tote</strong>, <strong >watercolour art</strong>, or <strong >personalised embroidery</strong>, I infuse each piece with meaning, detail, and beauty.
+                            From <strong >jewellery illustration</strong>  and <strong >heat foiling </strong> to <strong >leather </strong> and <strong >product painting</strong>, my work spans across intimate keepsakes to large-scale <strong >mural paintings</strong>. Whether it&apos;s a <strong >hand-painted tote</strong>, <strong >watercolour art</strong>, or <strong >personalised embroidery</strong>, I infuse each piece with meaning, detail and beauty in my live event.
                         </p>
                         <p>
                             I also explore the art of <strong >silhouettes</strong>, <strong >origami</strong>, <strong >beadwork</strong>, and more—offering a truly personalised, handcrafted touch to every creation.
@@ -56,7 +56,7 @@ function HomeAbout() {
                         <li className='flex items-center space-x-3'> <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></span> <span>Luxury Brand Collaborations</span></li>
                         <li className='flex items-center space-x-3'> <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></span> <span>Private Custom Orders</span></li>
                     </ul>
-                    <p className='italic text-lg font-semibold text-gray-400'>Let&apos;s create something meaningful together.</p>
+                    <p className='italic text-lg font-semibold text-gray-400'>Let&apos;s create something best and  meaningful together.</p>
                 </div>
                 <div className={`sm:block hidden `}>
                     <div className="relative">

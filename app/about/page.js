@@ -26,34 +26,35 @@ function page() {
                     <img src="/images/about-page.png" className='hidden sm:block' alt='about' />
                     <img src="/images/about-page-mobile.png" className='sm:hidden block' alt='about' />
                     <div>
-                        <p className='text-base mb-2 text-gray-300'>Hello! My name is</p>
+                        <p className='text-base mb-2 text-gray-300'>Hello!  I&apos;m</p>
                         <h1 className="font-extrabold mb-2 text-2xl text-gray-200 sm:text-5xl mx-auto  leading-10 sm:leading-16 tracking-wide">
                             <span className=" font-halimun drop-shadow-sm drop-shadow-gray-600">Sadaf Khan</span>
                         </h1>
                         <h2 className='text-base sm:text-xl w-full font-semibold text-gray-400 flex sm:flex-row flex-col sm:gap-x-5 gap-y-2 sm:gap-y-0 justify-between pt-2'>
-                            <span className='flex gap-x-2'><Check className='text-white bold p-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full' /> An Architect  </span>
-                            <span className='flex gap-x-2'><Check className='text-white bold p-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full' /> An Artist</span>
-                            <span className='flex gap-x-2'><Check className='text-white bold p-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full' /> A Calligrapher</span></h2>
+                            <span className='flex gap-x-2'><Check className='text-white bold p-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full' /> A live calligrapher </span>
+                            <span className='flex gap-x-2'><Check className='text-white bold p-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full' /> Visual artist</span>
+                            <span className='flex gap-x-2'><Check className='text-white bold p-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full' /> Architect</span></h2>
                     </div>
                 </div>
             </section>
             <section className='myContainer mt-5 mb-10 max-w-4xl'>
                 <div className='text-base sm:text-lg  space-y-3 text-gray-300'>
                     <p>
-                   I am an Architect and a passionate artist specializing in <strong>arabic and english calligraphy painting</strong>, <strong>abstract painting</strong>, <strong>digital art</strong>, <strong>mural painting</strong>, <strong>jewellery illustration</strong>, <strong>product painting</strong>, <strong>beads making</strong>, <strong>engraving</strong>, <strong>heat foiling</strong> . With a deep love for creativity and expression, I have dedicated my life to capturing the beauty and complexity of the world around us. 
+                  based in Riyadh, Saudi Arabia. I specialize in creating <strong>Arabic and English calligraphy live at events</strong>, <strong>exhibitions</strong> and <strong>cultural gatherings</strong>—offering an engaging and memorable experience that brings the beauty of handwritten art to life in real time.
                     </p>
-                     My journey as an artist began <strong>4 years ago</strong> when I discovered the power of art to convey emotions and tell stories. Over the years, I have honed my skills and developed a unique style that blends <strong>abstract painting with Arabic calligraphy</strong>, <strong>
-                     pouring painting with verses of Quran</strong>. My work is heavily inspired by the beauty of <strong>Arabic calligraphy</strong>, and I strive to evoke a sense of wonder and introspection in my audience.
+                   It&apos;s been four years since I began my artistic journey—a path filled with growth, challenges, and endless inspiration. My work spans <strong>abstract painting</strong>, <strong>digital art</strong>, <strong>mural painting</strong>, <strong>jewellery illustration</strong>, <strong>beads making</strong>, <strong>engraving</strong>, <strong>heat foiling</strong>, <strong>origami</strong>, and <strong>silhouette art</strong>.
                     <p>
-                        I have had the privilege of showcasing my work in various <strong>Art Exhibitions platforms</strong>. Each piece I create is a reflection of my inner world and a dialogue with the viewer, inviting them to explore their own perceptions and emotions. I believe that art has the power to transform and uplift communities, and I am always eager to contribute to projects that have a positive impact. 
-                    </p>
-                    <p>
-                        I am a passionate <strong>Graphic Designer</strong>  and <strong>Digital Artist</strong> too with a love for creating captivating visual experiences. With a strong foundation in design principles and a flair for digital innovation, I specialize in crafting dynamic visuals that resonate with audiences. Whether it&apos;s through <strong>sleek logo designs</strong>, <strong>immersive digital illustrations</strong>, or <strong>engaging web layouts</strong>, I thrive on turning ideas into stunning visual realities. With each project, I bring a unique blend of creativity, technical expertise, and attention to detail, ensuring that every design reflects the essence and vision of my clients. 
+                        One of my signature styles involves <strong>combining Arabic calligraphy with abstract painting</strong>, often featuring <strong>Qur&apos;anic verses through techniques</strong> such as <strong>pouring</strong> and <strong>mixed media</strong>. These pieces are not only visually compelling but also spiritually resonant, inviting viewers into a space of introspection and cultural appreciation.
                     </p>
                     <p>
-                      From concept development to final execution, I&apos;m dedicated to delivering impactful designs that leave a lasting impression. Let&apos;s collaborate and bring your creative vision to life! for taking the time to learn about my work.
+                     I&apos;ve had the privilege of showcasing my work at various <strong>art exhibitions</strong> and <strong>creative platforms</strong>, and each piece I create is a reflection of my inner world—a visual dialogue that connects deeply with its audience.
                     </p>
-                    <p className='italic font-semibold'>I invite you to explore my portfolio and join me on this. artistic journey.</p>
+                    <p>
+                      In addition to fine art, I&apos;m also a skilled <strong>graphic designer</strong> and <strong>digital artist</strong>, creating powerful visual content including <strong>logo designs</strong>, <strong>illustrations</strong>, and <strong>web layouts</strong>. With a strong foundation in design principles and an eye for innovation, I bring clarity, creativity, and impact to every project I undertake.
+                    </p>
+                    <p className='font-bold'>Let&apos;s Collaborate</p>
+                    <p>Whether it&apos;s through <strong>a live calligraphy session</strong>, <strong>a custom painting</strong>, or <strong>a digital design project</strong>, being <strong>a live calligrapher</strong> and <strong>live event artist</strong> i am always excited to collaborate on meaningful work that inspires and uplifts.</p>
+                    <p className='italic font-semibold'>Thank you for visiting—please take a moment to explore my work and feel free to get in touch to bring your creative vision to life.</p>
                 </div>
              
             </section>
