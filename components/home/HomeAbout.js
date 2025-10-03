@@ -29,7 +29,7 @@ function HomeAbout() {
 
                     <div className="relative sm:hidden mt-5 sm:mt-0">
                         <img
-                            src="/images/about.png"
+                            src="/images/sadaf.jpg"
                             alt="Sadaf Khan"
 
 
@@ -61,7 +61,7 @@ function HomeAbout() {
                 <div className={`sm:block hidden `}>
                     <div className="relative">
                         <img
-                            src="/images/about.png"
+                            src="/images/sadaf.jpg"
                             alt="Sadaf Khan"
 
 
