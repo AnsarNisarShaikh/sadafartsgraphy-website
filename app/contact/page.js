@@ -27,11 +27,11 @@ export default async function Contact() {
       {/* Banner Section */}
    <ContactBanner />
       <section className='myContainer pb-16'>
-        <div className='grid grid-cols-1 sm:grid-cols-7 sm:gap-x-4 gap-y-4 sm:gap-y-0'>
+        <div className='grid grid-cols-1 sm:grid-cols-8 lg:grid-cols-7 sm:gap-x-4 gap-y-4 sm:gap-y-0'>
       
-              <div className="sm:col-span-4 bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-xl p-4 border border-purple-500/20">
+              <div className="sm:col-span-5 lg:col-span-5 bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-xl p-4 border border-purple-500/20">
                 <h3 className="text-2xl font-bold text-white mb-4">Services I Offer</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                   {workDetails?.map((service, index) => (
                     <div key={index} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
@@ -42,7 +42,7 @@ export default async function Contact() {
               </div>
 
          
-              <div className="sm:col-span-3 bg-gray-900/30 rounded-xl p-6 border border-gray-800">
+              <div className="sm:col-span-3 lg:col-span-2 bg-gray-900/30 rounded-xl p-6 border border-gray-800">
                 <h3 className="text-xl font-semibold text-white mb-3">What to Expect</h3>
                 <ul className="space-y-3 text-gray-300">
                   <li className="flex items-center space-x-3">

@@ -120,7 +120,7 @@ function Footer() {
   return (
     <footer className="bg-gray-950 pt-12 pb-3 border-t border-gray-800">
       <div className="myContainer">
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-y-3 gap-x-0 sm:gap-x-10 justify-between sm:gap-y-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-3 gap-x-0 sm:gap-x-10 justify-between sm:gap-y-2">
           {/* Address */}
           <div>
             <div className="pb-8 sm:pb-11  flex flex-col  items-center justify-center sm:items-start sm:justify-start sm:flex-col ">

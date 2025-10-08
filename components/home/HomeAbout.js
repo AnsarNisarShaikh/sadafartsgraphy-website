@@ -12,7 +12,7 @@ function HomeAbout() {
     });
     return (
         <div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-16 items-center py-10 sm:py-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-16 items-center py-10 sm:py-20">
                 <div className='z-10'>
                     <p className='text-base mb-2 text-gray-300'>Hello! My name is</p>
                     <h1 className="font-extrabold mb-2 text-2xl text-gray-200 sm:text-5xl mx-auto  leading-10 sm:leading-16 tracking-wide">
@@ -65,7 +65,7 @@ function HomeAbout() {
                             alt="Sadaf Khan"
 
 
-                            className="w-full h-[300px] sm:h-auto object-cover rounded-2xl shadow-2xl"
+                            className="w-full h-[300px] sm:h-[400px] lg:h-auto object-cover rounded-2xl shadow-2xl"
                         />
                         <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur-xl opacity-50"></div>
                     </div>
