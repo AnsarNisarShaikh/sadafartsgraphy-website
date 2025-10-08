@@ -271,7 +271,7 @@ function Footer() {
             <p className=" text-sm font-light text-gray-400">
               2025 &copy;All Right Reserved By   <span className=" text-gray-300">Sadafartsgraphy</span>
             </p>
-            <Link href="/" >
+            <Link href="https://api.whatsapp.com/send?phone=919970613673" target="_blank" >
               <span
                 title="Rest Website developement Company"
                 className=" text-sm font-light group text-gray-400 "
