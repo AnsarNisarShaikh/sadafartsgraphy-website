@@ -4,7 +4,6 @@ import { Header } from "@/components/general/Header";
 import Footer from "@/components/general/Footer"
 import localFont from 'next/font/local';
 
-
   const halimun = localFont({
       src: '../public/fonts/Halimun.ttf', // Adjust path as needed
       variable: '--font-halimun',
@@ -36,7 +35,8 @@ const playwrite = Playwrite_AU_NSW({
 export const metadata = {
   title: "Best Calligraphy & Custom Art Services in Riyadh | Sadaf Khan",
   description: "Arabic & English calligraphy, murals, leather art, engraving & bespoke designs in Riyadh. Unique, handcrafted artworks with modern creativity",
-   other: {
+  //google search console
+  other: {
     "google-site-verification": "xdUH8d4OMk6nITvy47XLeL5OUnAieqJDsOTinjg2CGg",
   },
   openGraph: {
