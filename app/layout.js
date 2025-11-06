@@ -36,6 +36,9 @@ const playwrite = Playwrite_AU_NSW({
 export const metadata = {
   title: "Best Calligraphy & Custom Art Services in Riyadh | Sadaf Khan",
   description: "Arabic & English calligraphy, murals, leather art, engraving & bespoke designs in Riyadh. Unique, handcrafted artworks with modern creativity",
+   other: {
+    "google-site-verification": "xdUH8d4OMk6nITvy47XLeL5OUnAieqJDsOTinjg2CGg",
+  },
   openGraph: {
     title: "Best Calligraphy & Custom Art Services in Riyadh | Sadaf Khan",
     description:
