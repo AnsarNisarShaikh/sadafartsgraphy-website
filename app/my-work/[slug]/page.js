@@ -19,8 +19,7 @@ import {services} from "@/utils/serviceData"
 export const revalidate = 60;
 // SSG (static site Generation)
 export  function generateStaticParams() {
-  const slugs = services.map((item) => ({ slug: `${item.slug}` }));
-  
+  const slugs = services.map((item) => ({ slug: `${item.slug}` }));  
   return slugs;
 }
 
@@ -63,7 +62,6 @@ async function Page({ params }) {
   // let service=serviceData.filter((item)=>item.slug===slug);
   // service=service[0];
   // console.log(service,"service")
-
   const options = {
     renderMark: {
       [MARKS.BOLD]: (text) => <strong>{text}</strong>,
@@ -160,5 +158,4 @@ async function Page({ params }) {
     </div>
   )
 }
-
 export default Page
