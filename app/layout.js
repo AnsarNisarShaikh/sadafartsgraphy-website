@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "@/components/general/Header";
 import Footer from "@/components/general/Footer"
 import localFont from 'next/font/local';
+import Head from "next/head";
 
   const halimun = localFont({
       src: '../public/fonts/Halimun.ttf', // Adjust path as needed
@@ -61,6 +62,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+     <Head>
+        {/* ⭐ JSON-LD SCHEMA WITH SOCIAL LINKS */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Sadaf Artsgraphy",
+              url: process.env.NEXT_PUBLIC_WEBSITE_URL,
+              sameAs: [
+                "https://www.instagram.com/sadafartsgraphy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+                "https://www.linkedin.com/in/sadaf-khan-9894122b2",
+                "https://www.facebook.com/sadaf.ambreen.35/about_work_and_education",
+                // add more if needed
+              ],
+            }),
+          }}
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${halimun.variable} ${playwrite.variable} ${geistMono.variable} ${pacifico.variable} antialiased`}
 
