@@ -17,7 +17,6 @@ import {services} from "@/utils/serviceData"
 //It does NOT call Contentful every 60 seconds automatically.
 //It only calls Contentful when a user requests the page after the stale time.
 export const revalidate = 60;
-
 // SSG (static site Generation)
 export  function generateStaticParams() {
   const slugs = services.map((item) => ({ slug: `${item.slug}` }));
