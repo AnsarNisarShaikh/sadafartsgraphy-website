@@ -269,7 +269,7 @@ function Footer() {
         <div className="border-gray-800  text-center ">
           <div className="flex sm:justify-between justify-center items-center flex-wrap mt-0  lg:px-0  lg:mx-auto  pt-5 gap-y-1 sm:gap-y-0">
             <p className=" text-sm font-light text-gray-400">
-              2025 &copy;All Right Reserved By   <span className=" text-gray-300">Sadafartsgraphy</span>
+              2026 &copy;All Right Reserved By   <span className=" text-gray-300">Sadafartsgraphy</span>
             </p>
             <Link href="https://api.whatsapp.com/send?phone=919970613673" target="_blank" >
               <span
