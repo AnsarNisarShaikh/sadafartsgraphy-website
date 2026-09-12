@@ -18,7 +18,7 @@ function HomeBanner() {
                 <span className="text-white">Expression</span> */}
                 <span className='font-halimun'>SadafArtsgraphy</span>
             </h1>
-            <h2 className='text-xl sm:text-2xl my-2 font-semibold'>Artist/Calligrapher/Engraver</h2>
+            <h2 className='text-xl sm:text-2xl my-2 font-semibold'>Licensed Artist/Calligrapher/Engraver</h2>
             <p className="text-xl lg:text-2xl text-gray-300 mb-4 sm:mb-8 max-w-3xl mx-auto sm:leading-relaxed">
                 With a deep love for creativity and expression, I have dedicated my life to capturing
                 the beauty and complexity of the world around us through various art forms.

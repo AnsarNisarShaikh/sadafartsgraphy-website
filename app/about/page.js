@@ -40,7 +40,7 @@ function page() {
             <section className='myContainer mt-5 mb-10 max-w-4xl'>
                 <div className='text-base sm:text-lg  space-y-3 text-gray-300'>
                     <p>
-                        Based in Riyadh, Saudi Arabia. I specialize in creating <strong>Arabic and English calligraphy live at events</strong>, <strong>exhibitions</strong> and <strong>cultural gatherings</strong>—offering an engaging and memorable experience that brings the beauty of handwritten art to life in real time.
+                        Based in Riyadh, Saudi Arabia. I am a licensed artist specializing in creating <strong>Arabic and English calligraphy live at events</strong>, <strong>exhibitions</strong> and <strong>cultural gatherings</strong>—offering an engaging and memorable experience that brings the beauty of handwritten art to life in real time.
                     </p>
                     <p>
                         It&apos;s been four years since I began my artistic journey—a path filled with growth, challenges, and endless inspiration. My work spans <strong>abstract painting</strong>, <strong>digital art</strong>, <strong>mural painting</strong>, <strong>jewellery illustration</strong>, <strong>beads making</strong>, <strong>engraving</strong>, <strong>heat foiling</strong>, <strong>origami</strong>, and <strong>silhouette art</strong>.
