@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Image from 'next/image';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 
 function HomeAbout() {
@@ -28,12 +29,14 @@ function HomeAbout() {
                     </h2>
 
                     <div className="relative sm:hidden mt-5 sm:mt-0">
-                        <img
+                        <Image
                             src="/images/sadaf.png"
                             alt="Sadaf Khan"
 
 
                             className="w-full h-[300px] sm:h-auto object-cover rounded-2xl shadow-2xl"
+                            width={500}
+                            height={600}
                         />
                         <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur-xl opacity-50"></div>
                     </div>
@@ -60,12 +63,14 @@ function HomeAbout() {
                 </div>
                 <div className={`sm:block hidden `}>
                     <div className="relative">
-                        <img
+                        <Image
                             src="/images/sadaf.png"
                             alt="Sadaf Khan"
 
 
                             className="w-full h-[300px] sm:h-[400px] lg:h-auto object-cover rounded-2xl shadow-2xl"
+                            width={500}
+                            height={600}
                         />
                         <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur-xl opacity-50"></div>
                     </div>

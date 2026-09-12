@@ -34,16 +34,32 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const { serviceDetails } = await fetchServicesDetail(slug);
+  const service = serviceDetails[0];
+  const bannerUrl = service?.banner?.url;
+
   return {
     title: Metaservice.title,
     description: Metaservice.description,
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/my-work/${slug}`,
+    },
     openGraph: {
       title: Metaservice.title,
       description: Metaservice.description,
       url: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/my-work/${slug}`,
       siteName: "sadafartsgraphy",
-      locale: "en_US",
+      images: bannerUrl
+        ? [{ url: bannerUrl, width: 1200, height: 630, alt: Metaservice.title }]
+        : undefined,
+      locale: "en_SA",
       type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: Metaservice.title,
+      description: Metaservice.description,
+      images: bannerUrl ? [bannerUrl] : undefined,
     },
   };
 }
@@ -71,7 +87,7 @@ async function Page({ params }) {
         <p className="pb-2 text-lg text-gray-300">{children}</p>
       ),
     },
-    renderText: (text) => text.replace("!", "?"),
+    renderText: (text) => text,
   };
 
    if (!service) return notFound();

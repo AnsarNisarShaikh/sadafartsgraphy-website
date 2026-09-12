@@ -6,12 +6,15 @@ export const metadata = {
   title: "My work | Calligraphy & Custom Art in Riyadh",
   description:
     "Explore my work of Arabic calligraphy, murals, product painting, embroidery & bespoke designs. Unique creations for events, decor & gifting.",
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/my-work`,
+  },
    openGraph: {
       title: "My work | Calligraphy & Custom Art in Riyadh",
       description: "Explore my work of Arabic calligraphy, murals, product painting, embroidery & bespoke designs. Unique creations for events, decor & gifting.",
       url: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/my-work`,
       siteName: "sadafartsgraphy",
-      locale: "en_US",
+      locale: "en_SA",
       type: "website",
     },
 };

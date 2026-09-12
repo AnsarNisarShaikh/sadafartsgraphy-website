@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 import { House, Mail, Menu, SquareChartGantt, User, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export function Header() {
@@ -37,7 +38,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="text-base sm:text-2xl flex gap-x-2 items-center ">
             {/* Sadafartsgraphy */}
-            <img src="/images/logo.png" className="rounded-full w-12 h-12 sm:w-14 sm:h-14" alt="logo" />
+            <Image src="/images/logo.png" className="rounded-full w-12 h-12 sm:w-14 sm:h-14" alt="Sadaf Khan Logo" width={56} height={56} />
             <span className="font-halimun font-semibold text-gray-300">Sadaf Khan</span>
           </Link>
 
@@ -63,7 +64,7 @@ export function Header() {
 
               <div className=" flex justify-center gap-x-4 py-4   ">
                       <Link
-                        href="https://www.instagram.com/sadafartsgraphy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        href="https://www.instagram.com/sadafartsgraphy"
                         target="_blank"
                       >
                         <button

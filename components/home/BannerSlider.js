@@ -78,7 +78,7 @@ const BannerSlider = () => {
                 fill
                 priority   // 🚀 ensures it loads immediately
                 // quality={90}
-                alt="slider"
+                alt="Sadaf Artsgraphy Calligraphy Banner"
               />
             </div>
           </SwiperSlide>

@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Image from 'next/image';
 import ScrollAnimationWrapper from "@/motions/ScrollAnimationWrapper";
 
 import { useMemo } from "react";
@@ -96,9 +97,11 @@ function Brands({brandsDetails}) {
         {
           brandsDetails?.map((item, i) =>
             <ScrollAnimationWrapper key={i}>
-              <motion.img
+              <motion.div
                variants={scrollAnimationyb}
-                custom={{ delay: i * 0.2 }} src={item?.image.url} alt={item.title} className="h-28 bg-primary mx-auto" />
+                custom={{ delay: i * 0.2 }} className="relative h-28 w-auto mx-auto">
+                <Image src={item?.image.url} alt={item.title} fill className="object-contain" />
+              </motion.div>
             </ScrollAnimationWrapper>
           )
         }

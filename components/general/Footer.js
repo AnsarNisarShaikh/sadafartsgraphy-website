@@ -128,7 +128,7 @@ function Footer() {
                 <Link href="/" className="">
                   <Image
                     src="/images/logo-f.png"
-                    alt="pic"
+                    alt="Sadaf Artsgraphy Logo"
                     width={185}
                     height={185}
                     className="p-1 w-40 sm:w-52 h-full  border border-white"
@@ -163,7 +163,7 @@ function Footer() {
               <div className="">
                 <div className=" flex sm:justify-start gap-x-4 py-4   sm:gap-x-2 sm:py-3">
                   <Link
-                    href="https://www.instagram.com/sadafartsgraphy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    href="https://www.instagram.com/sadafartsgraphy"
                     target="_blank"
                   >
                     <button

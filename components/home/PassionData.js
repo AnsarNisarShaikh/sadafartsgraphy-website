@@ -1,5 +1,6 @@
 "use client"
 import Link from 'next/link';
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 
 function PassionData() {
@@ -42,12 +43,14 @@ function PassionData() {
 
             <div className={`relative transform transition-all duration-1000 delay-300 ${aboutVisible ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'}`}>
               <div className="relative">
-                <img
+                <Image
                   src="/images/profile-banner.png"
-                  alt="profile banner"
+                  alt="Sadaf Khan Profile Banner"
 
 
                   className="w-full h-auto object-cover "
+                  width={600}
+                  height={400}
                 />
                 {/* <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur-xl opacity-50"></div> */}
               </div>

@@ -7,12 +7,15 @@ export const metadata = {
   title: "Contact Sadaf Khan | Calligraphy & Art Services in Riyadh",
   description:
     "Get in touch for bespoke calligraphy, murals, engraving & custom artwork in Riyadh. Available Sun–Thu, 9AM–6PM AST.",
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/contact`,
+  },
    openGraph: {
       title: "Contact Sadaf Khan | Calligraphy & Art Services in Riyadh",
       description: "Get in touch for bespoke calligraphy, murals, engraving & custom artwork in Riyadh. Available Sun–Thu, 9AM–6PM AST.",
       url: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/contact`,
       siteName: "sadafartsgraphy",
-      locale: "en_US",
+      locale: "en_SA",
       type: "website",
     },
 };
@@ -23,6 +26,37 @@ export default async function Contact() {
   return (
     <div className="overflow-x-hidden sm:min-h-screen bg-gray-950 text-white">
     
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Sadaf Artsgraphy",
+            description: "Arabic & English calligraphy, murals, leather art, engraving & bespoke designs in Riyadh",
+            url: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/contact`,
+            telephone: "+966502269892",
+            email: "ar_sadaf1@yahoo.com",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Riyadh",
+              addressRegion: "Riyadh Province",
+              addressCountry: "SA",
+            },
+            openingHoursSpecification: {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Sunday"],
+              opens: "09:00",
+              closes: "18:00",
+            },
+            sameAs: [
+              "https://www.instagram.com/sadafartsgraphy",
+              "https://www.linkedin.com/in/sadaf-khan-9894122b2",
+              "https://www.facebook.com/sadaf.ambreen.35/about_work_and_education",
+            ],
+          }),
+        }}
+      />
 
       {/* Banner Section */}
    <ContactBanner />

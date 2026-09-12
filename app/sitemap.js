@@ -1,113 +1,47 @@
-export default function sitemap() {
-  return [
+import { fetchWorksDetail } from '@/apis/getWorkData';
+
+const baseUrl = process.env.NEXT_PUBLIC_WEBSITE_URL || 'https://sadafartsgraphy.com';
+
+export default async function sitemap() {
+  const staticPages = [
     {
-      url: 'https://sadafartsgraphy.com',
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 1,
     },
     {
-      url: 'https://sadafartsgraphy.com/about',
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://sadafartsgraphy.com/my-work',
+      url: `${baseUrl}/my-work`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://sadafartsgraphy.com/contact',
+      url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/live-studio-calligraphy',
+  ];
+
+  let servicePages = [];
+  try {
+    const { workDetails } = await fetchWorksDetail();
+    servicePages = workDetails.map((service) => ({
+      url: `${baseUrl}/my-work/${service.slug}`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/bespoke-calligraphy',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/live-studio-engraving',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/jewellery-illustration',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/heat-foiling',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/product-painting',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/leather-painting',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/mural-painting',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/tote-bag-live',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/artwork-customisation',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/beads-making',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/hand-embroidery-work',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/silhouette-arts',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://sadafartsgraphy.com/my-work/origami-work',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-  
-  ]
+    }));
+  } catch (error) {
+    console.error('Failed to fetch services for sitemap:', error);
+  }
+
+  return [...staticPages, ...servicePages];
 }
