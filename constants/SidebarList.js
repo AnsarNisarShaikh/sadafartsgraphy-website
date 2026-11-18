@@ -83,6 +83,12 @@ const MyWorkPages = [
     linkSrc: "/my-work/origami-work",
     slug:"origami-work"
   },
+  {
+    id: "15",
+    title: "Digital fashion illustration ",
+    linkSrc: "/my-work/digital-fashion-illustration ",
+    slug:"digital-fashion-illustration"
+  },
 
 ];
 
